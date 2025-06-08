@@ -1,185 +1,462 @@
+/* Базовые стили */
 body {
     font-family: 'Onest', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f2f5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f0f2f5; /* Базовый цвет фона страницы */
     color: #333;
     line-height: 1.6;
 }
 
-header {
-    background-color: #004085;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+#allrecords {
+    opacity: 1; /* Чтобы страница сразу была видна */
+    transition: none; /* Убираем transition, который был связан с JS */
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Общие Tilda-подобные стили */
+.t-rec {
+    box-sizing: border-box;
+    position: relative; /* Для правильного позиционирования дочерних элементов */
+}
+
+.t-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
-.logo a {
-    display: flex;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    font-size: 1.8rem;
+.t-col {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+}
+
+.t-col_6 {
+    width: 50%;
+}
+
+.t-align_center {
+    text-align: center;
+}
+
+.t-title {
     font-weight: 700;
 }
 
-.logo img {
-    height: 40px;
-    margin-right: 10px;
-    vertical-align: middle;
+.t-name {
+    font-weight: 600;
 }
 
-.nav-links {
+.t-descr {
+    font-weight: 400;
+}
+
+/* Десктопная шапка (rec662107442) */
+#rec662107442.desktop-header {
+    background-color: rgba(0,0,0,1); /* Черный фон шапки */
+    height: 80px; /* Высота шапки */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 990;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Тень */
+}
+
+#rec662107442 .t228__maincontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 40px; /* Горизонтальные отступы */
+}
+
+#rec662107442 .t228__leftside {
+    display: flex;
+    align-items: center;
+}
+
+#rec662107442 .t228__leftcontainer {
+    padding: 20px 0;
+}
+
+#rec662107442 .t228__imgwrapper {
+    display: block;
+}
+
+#rec662107442 .t228__imglogo {
+    max-width: 140px;
+    width: 140px;
+    min-width: 140px;
+    height: auto;
+    display: block;
+}
+
+#rec662107442 .t228__centerside {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end; /* Меню выровнено по правому краю */
+}
+
+#rec662107442 .t228__list {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-.nav-links li {
-    margin-left: 30px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.nav-links a:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-}
-
-main {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 20px 30px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-/* Стили для Hero Section */
-.hero-section {
-    height: 753.3px; /* Высота по оригиналу */
-    /* ОБНОВЛЕНО: Используем найденное фоновое изображение */
-    background-image: url('https://optim.tildacdn.com/tild3739-3037-4630-b966-623266626462/-/format/webp/6nz8b6ANQlw.jpg.webp');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
 }
 
-.hero-section::before {
-    content: "";
+#rec662107442 .t228__list_item {
+    position: relative;
+    padding: 0 45px 0 0;
+}
+
+#rec662107442 .t228__list_item:last-child {
+    padding-right: 0;
+    padding-left: 45px; /* Сохраняем отступ от предыдущего элемента */
+}
+
+#rec662107442 .t-menu__link-item {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+    display: block;
+    padding: 8px 0;
+}
+
+#rec662107442 .t-menu__link-item:hover {
+    color: #bdff00; /* Цвет при наведении */
+}
+
+/* Индикатор подменю (стрелочка) */
+#rec662107442 .t-menusub__target-link .t-menusub__arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    border-color: #ffffff transparent transparent transparent;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+/* Подменю (всегда видимо, без JS) */
+#rec662107442 .t-menusub {
+    display: block; /* Делаем подменю всегда видимым */
     position: absolute;
+    top: 100%; /* Расположение под главным пунктом */
+    left: 0;
+    min-width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1001;
+    background-color: #ffffff; /* Белый фон для подменю */
+    text-align: left;
+    padding: 10px 0;
+    margin-top: 15px; /* Отступ от основного меню */
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+#rec662107442 .t-menusub__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#rec662107442 .t-menusub__list-item {
+    padding: 0;
+}
+
+#rec662107442 a.t-menusub__link-item {
+    font-size: 16px;
+    color: #727272; /* Цвет текста подменю */
+    font-weight: 400;
+    padding: 10px 20px; /* Отступы для пунктов подменю */
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+#rec662107442 a.t-menusub__link-item:hover {
+    color: #000000;
+    background-color: #f0f0f0;
+}
+
+/* Мобильная шапка (rec668069066) */
+#rec668069066.mobile-header {
+    display: none; /* Скрыта по умолчанию, показывается на мобильных */
+    background-color: rgba(0,0,0,1);
+    height: 80px;
+    position: relative;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
+    z-index: 990;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#rec668069066 .t451__container {
     height: 100%;
-    /* ОБНОВЛЕНО: Используем градиент-фильтр из оригинала */
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
-    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
-.hero-section .hero-pretitle {
-    font-size: 26px;
-    color: white;
-    margin-bottom: 20px;
-    line-height: 1.3;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+#rec668069066 .t451__logo__img {
+    max-width: 140px;
+    height: auto;
+    display: block;
 }
 
-.hero-section h1 {
-    font-size: 28px;
+#rec668069066 .t-menuburger {
+    position: relative;
+    flex-shrink: 0;
+    width: 28px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#rec668069066 .t-menuburger span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+    left: 0;
+    height: 3px;
+    background-color: #ffffff; /* Цвет полосок гамбургера */
+    transition: all 0.25s ease-in-out;
+}
+
+#rec668069066 .t-menuburger span:nth-child(1) { top: 0px; }
+#rec668069066 .t-menuburger span:nth-child(2),
+#rec668069066 .t-menuburger span:nth-child(3) { top: 8px; }
+#rec668069066 .t-menuburger span:nth-child(4) { top: 16px; }
+
+/* Мобильное меню (t451m) - всегда видно для стилизации */
+#rec668069066 .t451m {
+    position: absolute; /* Или fixed, в зависимости от желаемого поведения */
+    top: 80px; /* Располагаем под шапкой */
+    left: 0;
+    width: 100%;
+    max-width: 100%; /* Занимает всю ширину на мобильных */
+    height: auto; /* Высота по содержимому */
+    background-color: #000000; /* Фон мобильного меню */
+    z-index: 998; /* Чуть ниже гамбургера */
+    overflow-y: auto;
+    padding-bottom: 20px; /* Отступ снизу */
+}
+
+#rec668069066 .t451m__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#rec668069066 .t451m__list_item {
+    padding: 15px 20px; /* Отступы для пунктов мобильного меню */
+    border-bottom: 1px solid rgba(255,255,255,0.1); /* Разделитель */
+}
+
+#rec668069066 .t451m__list_item:last-child {
+    border-bottom: none;
+}
+
+#rec668069066 .t451m__list_item a {
+    color: #ffffff;
+    font-size: 18px; /* Размер шрифта мобильного меню */
     font-weight: 700;
-    color: white;
-    margin-bottom: 10px;
-    line-height: 28px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    text-transform: uppercase;
-}
-
-.hero-section .hero-subtitle {
-    font-size: 16px;
-    color: #f0f0f0;
-    max-width: 800px;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-}
-
-.hero-buttons {
-    margin-top: 30px;
-}
-
-.hero-button {
-    color: #000000;
-    background-color: #bdff00;
-    padding: 15px 30px;
     text-decoration: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    display: inline-block;
+    display: block;
+    transition: color 0.2s ease;
 }
 
-.hero-button:hover {
-    background-color: #a3e600;
-    transform: translateY(-2px);
+#rec668069066 .t451m__list_item a:hover {
+    color: #bdff00;
 }
 
-/* Стили для секции "О центре" */
-.about-section {
-    padding: 40px 20px;
-    text-align: center;
+/* Подменю внутри мобильного меню */
+#rec668069066 .t451m__list_item .t-menusub {
+    position: static; /* Убираем абсолютное позиционирование */
+    top: auto;
+    left: auto;
+    min-width: auto;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    background-color: rgba(255,255,255,0.05); /* Легкий фон для подменю */
+    padding: 10px 0;
+    margin-top: 10px;
 }
 
-.about-section h2 {
-    color: #004085;
+#rec668069066 .t451m__list_item .t-menusub__list-item a {
+    padding: 8px 30px; /* Отступы для пунктов подменю */
+    font-size: 16px;
+    color: #ebebeb; /* Цвет текста подменю */
+    font-weight: 400;
+}
+
+#rec668069066 .t451m__list_item .t-menusub__list-item a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: #bdff00;
+}
+
+
+/* Медиа-запросы для переключения между десктопной и мобильной шапкой */
+@media screen and (min-width: 981px) {
+    #rec662107442.desktop-header {
+        display: block; /* Показываем десктопную шапку */
+    }
+    #rec668069066.mobile-header {
+        display: none; /* Скрываем мобильную шапку */
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #rec662107442.desktop-header {
+        display: none; /* Скрываем десктопную шапку */
+    }
+    #rec668069066.mobile-header {
+        display: block; /* Показываем мобильную шапку */
+    }
+}
+
+/* Футер (rec667400360) */
+#rec667400360.footer-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #000000; /* Черный фон */
+    color: #ffffff;
+}
+
+#rec667400360 .t-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#rec667400360 .t300__topwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#rec667400360 .t300__leftside {
+    text-align: left;
+    padding-right: 30px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#rec667400360 .t300__rightside {
+    text-align: right;
+    padding-left: 30px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 980px) {
+    #rec667400360 .t300__leftside,
+    #rec667400360 .t300__rightside {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    #rec667400360 .t300__rightside {
+        margin-top: 30px;
+    }
+}
+
+#rec667400360 .t300__logo-box {
     margin-bottom: 20px;
 }
 
-.about-section p {
+#rec667400360 .t300__img {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Центрирование лого на мобильных */
+}
+
+#rec667400360 .t300__text-wrap {
+    color: #ffffff;
+    font-size: 15px; /* Размер шрифта для копирайта */
+    line-height: 1.5;
+}
+
+#rec667400360 .t300__contacts-wrap {
+    margin-top: 20px;
+}
+
+#rec667400360 .t300__contacts-item {
+    display: flex;
+    align-items: center;
     margin-bottom: 15px;
-    font-size: 1.05rem;
-    line-height: 1.8;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: flex-end; /* Выравнивание иконок справа */
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 25px 0;
-    margin-top: 50px;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+@media screen and (max-width: 980px) {
+    #rec667400360 .t300__contacts-item {
+        justify-content: center; /* Центрирование иконок на мобильных */
+    }
 }
 
-.footer-content p {
-    margin: 5px 0;
-    font-size: 0.9rem;
+#rec667400360 .t300__icon-wrap {
+    margin-right: 15px;
+}
+
+#rec667400360 .t-sociallinks__item {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #bdff00; /* Ярко-зеленый кружок */
+}
+
+#rec667400360 .t-sociallinks__svg {
+    fill: #000000; /* Черный цвет иконки */
+    width: 24px;
+    height: 24px;
+}
+
+#rec667400360 .t300__title {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+#rec667400360 .t300__descr {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+#rec667400360 .t300__title a,
+#rec667400360 .t300__descr a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#rec667400360 .t300__title a:hover,
+#rec667400360 .t300__descr a:hover {
+    color: #bdff00;
 }
