@@ -9,28 +9,46 @@
     <meta property="og:title" content="Информационные технологии и дизайн">
     <meta property="og:description" content="Образовательная программа">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://static.tildacdn.com/tild6535-3434-4661-b336-643166313532/__.png">
+    <meta property="og:image" content="images/logo.png">
     <link rel="canonical" href="http://itdt-rsu.ru">
-    <link rel="shortcut icon" href="https://static.tildacdn.com/tild6664-3135-4835-a437-663864343238/logo_ITICT.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap" type="text/css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="/">
-                    <img src="https://static.tildacdn.com/tild6664-3135-4835-a437-663864343238/logo_ITICT.svg" alt="Логотип ITDT RSU">
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="https://rguk.ru/university/departments/institut-informatsionnykh-tekhnologiy-i-tsifrovoy-transformatsii/" class="logo-link">
+                    <img src="images/logo.png" alt="УНИВЕРСИТЕТ КОСЫГИНА">
+                    <span class="logo-text">УНИВЕРСИТЕТ<br>КОСЫГИНА</span>
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">О центре</a></li>
-                <li><a href="#">Образование</a></li>
-                <li><a href="#">Проекты</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li class="has-dropdown">
+                    <a href="#">О программе</a>
+                    <div class="dropdown-content">
+                        <a href="#">Особенности</a>
+                        <a href="#">Базовая ИТ-подготовка</a>
+                        <a href="#">Гибкая образовательная траектория</a>
+                        <a href="#">Чему научим</a>
+                        <a href="#">Кем и где работать после</a>
+                    </div>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Об университете</a>
+                    <div class="dropdown-content">
+                        <a href="#">Наш университет</a>
+                        <a href="#">ИИТиЦТ</a>
+                        <a href="#">Поддержка студентов</a>
+                        <a href="#">Студенческая жизнь</a>
+                        <a href="#">Наши студенты</a>
+                        <a href="#">Преподаватели</a>
+                        <a href="#">Инфраструктура</a>
+                    </div>
+                </li>
                 <li><a href="#">Как поступить</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
         </nav>
     </header>
@@ -40,12 +58,10 @@
             <p class="hero-pretitle">Институт информационных технологий и цифровой трансформации<br>РГУ им. А.Н. Косыгина</p>
             <h1>ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ И ДИЗАЙН</h1>
             <p class="hero-subtitle">Программа бакалавриата 09.03.02. Информационные системы и технологии»</p>
-            <br>
             <h1>ПРОГРАММИРОВАНИЕ И ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</h1>
             <p class="hero-subtitle">Программа бакалавриата 01.03.02. Прикладная математика и информатика</p>
-
             <div class="hero-buttons">
-                <a href="#rec666977861" class="hero-button">Стань абитуриентом уже сейчас!</a>
+                <a href="#" class="hero-button">Стань абитуриентом уже сейчас!</a>
             </div>
         </section>
 
@@ -57,11 +73,33 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Инновационно-технологический деловой центр РГУ. Все права защищены.</p>
-            <p>Адрес: г. Ростов-на-Дону, ул. Пушкинская, 150</p>
-            <p>Телефон: +7 (863) 2ХХ-ХХ-ХХ</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <h2 class="footer-title">Наши контакты</h2>
+            <div class="contact-info">
+                <p>+7 (495) 811-01-01 доб. 1069</p>
+                <p><a href="mailto:itct@rguk.ru">itct@rguk.ru</a></p>
+                <p>Москва, Малая Калужская, 1</p>
+                <p>м. Шаболовская</p>
+            </div>
+            <div class="qr-code">
+                <a href="https://rguk.ru/applicant/olympiads/" target="_blank" rel="noopener">
+                    <img src="images/cr-code.png" alt="QR Code">
+                </a>
+                <p class="qr-link-text">https://rguk.ru/applicant/olympiads/</p>
+            </div>
+            <div class="social-links">
+                <a href="https://rguk.ru/university/departments/institut-informatsionnykh-tekhnologiy-i-tsifrovoy-transformatsii/" target="_blank" rel="noopener" class="social-icon">
+                    <img src="images/internet.png" alt="Вебсайт">
+                </a>
+                <a href="https://vk.com/iit_rsu" target="_blank" rel="noopener" class="social-icon">
+                    <img src="images/vk.png" alt="ВКонтакте">
+                </a>
+                <a href="https://t.me/iit_rsu" target="_blank" rel="noopener" class="social-icon">
+                    <img src="images/telegram.png" alt="Telegram">
+                </a>
+            </div>
+            <p class="copyright">&copy; 2025 Инновационно-технологический деловой центр РГУ. Все права защищены.</p>
         </div>
     </footer>
 </body>
