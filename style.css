@@ -115,7 +115,7 @@ body {
 
 .hero-section {
     height: 753.3px;
-    background-image: url('images/6nz8b6ANQlw.jpg.webp');
+    background-color: #000000; 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -290,9 +290,9 @@ body {
     border-radius: 50%;
     position: relative;
     transition: transform 0.2s ease;
-    display: flex; /* Для центрирования img */
-    justify-content: center; /* Для центрирования img */
-    align-items: center; /* Для центрирования img */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-icon:hover {
