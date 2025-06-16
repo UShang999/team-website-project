@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Университет Косыгина</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 60px;
+      background-color: #fff;
+      color: #000;
+      text-align: center;
+    }
+
+    .logo {
+      max-width: 100px;
+      margin: 0 auto 10px;
+    }
+
+    .university-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0070f3;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto 60px;
+    }
+
+    .grid {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .item {
+      width: 260px;
+      position: relative;
+      padding-left: 40px;
+    }
+
+    .item::before {
+      content: attr(data-number);
+      position: absolute;
+      top: -30px;
+      left: -10px;
+      font-size: 120px;
+      color: #f0f6ff;
+      font-weight: bold;
+      z-index: 0;
+    }
+
+    .item h3 {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .item p {
+      font-size: 14px;
+      line-height: 1.5;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt="Логотип" class="logo">
+
+  <div class="university-name">
+    Российский государственный университет<br>
+    им. А.Н. Косыгина (Технологии. Дизайн. Искусство)
+  </div>
+
+  <div class="description">
+    Более 100 лет раскрываем и развиваем таланты в сферах технологий, дизайна и искусства за счет опережающей подготовки ответственных и мотивированных профессионалов.
+  </div>
+
+  <div class="grid">
+    <div class="item" data-number="1">
+      <h3>Крупный университет</h3>
+      <p>РГУ им. А. Н. Косыгина был основан в 1920 году и имеет богатую историю и традиции. Более 10000 студентов получают здесь высшее образование в 10 Институтах.</p>
+    </div>
+    <div class="item" data-number="2">
+      <h3>Удобное расположение</h3>
+      <p>В центре Москвы, рядом с метро Шаболовская. Несколько корпусов общежитий, в шаговой доступности от учебных корпусов.</p>
+    </div>
+    <div class="item" data-number="3">
+      <h3>Государственная аккредитация</h3>
+      <p>Выдача дипломов государственного образца и предоставление отсрочки от армии, что подтверждается Свидетельством о государственной аккредитации на сайте Рособрнадзора.</p>
+    </div>
+  </div>
+
+</body>
+</html>
