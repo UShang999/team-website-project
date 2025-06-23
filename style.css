@@ -264,6 +264,7 @@ body {
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
+    color: #004085;
 }
 
 .contact-info {
@@ -307,8 +308,8 @@ body {
 
 .social-icon {
     display: block;
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
     background-color: #bdff00;
     border-radius: 50%;
     position: relative;
@@ -422,6 +423,7 @@ body {
         font-size: 14px;
     }
 }
+
 
 .section-title {
   text-align: center;
@@ -615,7 +617,7 @@ body {
 .hero-title {
     font-size: 28px;
     font-weight: bold;
-    color: #0066e0;
+    color: #0111ec;
     margin-bottom: 20px;
     line-height: 1.4;
 }
@@ -648,7 +650,7 @@ body {
     top: 0;
     font-size: 64px;
     font-weight: bold;
-    color: rgba(0, 102, 224, 0.1);
+    color: rgba(0, 43, 95, 0.884);
     line-height: 1;
 }
 
@@ -656,12 +658,12 @@ body {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #111;
+    color: #ffffff88;
 }
 
 .advantage-item p {
     font-size: 14px;
-    color: #444;
+    color: #000000;
 }
 
 .iit-section {
@@ -740,7 +742,7 @@ body {
 .support-section {
     text-align: center;
     padding: 60px 20px;
-    background-color: #fff;
+    background-color: #000000;
     color: #000;
 }
 
@@ -862,6 +864,7 @@ body {
     font-size: 28px;
     color: #ccff00;
     margin-bottom: 40px;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .admission-step {
@@ -919,7 +922,7 @@ body {
     padding: 12px 24px;
     border-radius: 30px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition:  0.3s;
 }
 
 .admission-button:hover {
@@ -945,6 +948,7 @@ body {
   margin-bottom: 40px;
   align-items: flex-start;
   text-align: left;
+
 }
 
 .orientation-number {
@@ -1035,4 +1039,637 @@ body {
   color: #b9ff00;
   font-weight: bold;
   font-size: 16px;
+}
+
+
+
+/* Общий стиль для секции "Базовая ИТ-подготовка" */
+#step {
+  padding: 60px 20px;
+  background-color: #000000; /* светлый фон для выделения */
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 30px auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#step .section-title {
+  font-size: 2rem;
+  color: #004085;
+  margin-bottom: 20px;
+}
+
+/* Контейнер для изображения, чтобы оно было ровным и по центру */
+.step-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Само изображение — без лишних отступов и ровным размером */
+.step-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+ 
+}
+
+
+
+/* Общие стили для секции "Гибкая образовательная траектория" */
+
+.flexible-learning-path-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px; 
+}
+
+.flexible-learning-path-container {
+    width: 100%;
+}
+
+.flexible-learning-path-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #080808;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Для изображений */
+.content-wrapper img {
+    max-width: 45%;
+    height: auto;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+/* Для текста */
+.text-content {
+    max-width: 50%;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #000; /* делаем текст более читаемым */
+}
+
+/* Для выделенного заголовка */
+.highlighted-title {
+    background-color: #ffffff; /* белый фон */
+    color: #004085; /* синий текст */
+    padding: 10px 20px;
+    border-radius: 8px; /* скругление */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-wrapper img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+/* Общие стили для секции */
+.campaign-section {
+  background-color: #000;
+  padding: 40px 20px; 
+  font-family: 'Onest', sans-serif; 
+  color: #fff;
+  max-width: 1200px; 
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center; /* Центрирование текста */
+}
+
+/* Заголовок */
+.section-title {
+  color: #39FF14;
+  font-size: 28px; /* Размер заголовка, подгоните по вашему стилю */
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Roboto', Arial, sans-serif; /* Используйте тот же шрифт */
+}
+
+
+/* Текст внутри секции */
+.section-text {
+  font-size: 18px; /* Размер текста, который совпадает с другими секциями */
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto', Arial, sans-serif; /* Используйте тот же шрифт */
+}
+
+
+/* Форма */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px; /* Максимальная ширина формы */
+  margin: 0 auto;
+}
+
+/* Поля ввода */
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+}
+
+/* Кнопка */
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 12px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Текст о конфиденциальности */
+.privacy-note {
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+ /* студенческая жизнь */
+body {
+    background-color: #000; 
+    color: #fff; 
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+.student-life-section {
+    padding: 40px 0; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.title {
+    color: #004085;
+    font-size: 2.3em; 
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    gap: 30px;
+    align-items: center; 
+    color: #ffffff;
+}
+
+
+.image-column {
+    width: 60%;
+    position: relative;
+}
+
+.image-container {
+    position: relative; 
+}
+
+.image-main {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease; 
+}
+
+.image-slider {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 5px;
+}
+
+.image-slider img {
+    width: calc(16.66% - 5px); 
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.image-slider img:hover {
+    opacity: 1;
+}
+
+
+.text {
+    width: 40%;
+    color: #ffffff;
+    font-family: Arial, sans-serif; /* шрифт */
+    font-size: 16px; /* размер шрифта */
+    line-height: 1.5; /* межстрочный интервал для удобства чтения */       
+}
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    padding: 10px; 
+    border-radius: 50%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 10; 
+}
+
+.arrow:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+
+
+
+
+.student-life-section {
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+
+
+.student-life-section {
+  padding: 20px;
+  background-color: #000; /* фон сайта */
+  color: #fff; /* текст */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00ff00; /* яркий зеленый */
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.student-life-section {
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Заголовок */
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #004085;
+}
+
+/* Обертка для контента, чтобы расположить фото и текст рядом */
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+
+/* Контейнер слайдера */
+.slider-container {
+  flex: 1 1 50%;
+  max-width: 1000px; /* ширина для фото */
+  height: 600px; /* высота по аналогии с оригиналом */
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px; /* немного скругления для эстетики */
+}
+
+/* Сам слайдер и изображения внутри */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* чтобы изображения сохраняли пропорции и заполняли контейнер */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 10px; /* скругление для изображений */
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Текст */
+.text-container {
+  flex: 1 1 45%;
+  font-size: 1em;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+
+
+/* Общие стили для секции */
+.section-students {
+  padding: 40px 20px;
+  background-color: #fff;
+  font-family: 'Onest', sans-serif;
+}
+
+.section-students h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #004085;
+}
+
+.section-students p.description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Контейнер карточек */
+.students-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Карточка студента */
+.student-card {
+  width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.student-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.student-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.student-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 10px;
+  color: #222;
+}
+
+.student-course {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.student-review {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  padding: 0 10px;
+}
+
+/* Кнопка */
+.join-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ccff00;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-top: 30px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.join-button:hover {
+  background-color: #bada00;
+  transform: scale(1.05);
+}
+
+
+
+/* Общий стиль секции инфраструктура*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.infrastructure-section {
+    padding: 40px 0;
+    background-color: #ffffff;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start; 
+}
+
+
+.image-column {
+    width: 60%;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-main {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-slider {
+    display: flex;
+    justify-content: flex-start; 
+    margin-top: 15px;
+    gap: 5px;
+    overflow-x: auto;  
+    padding-bottom: 10px; 
+}
+
+.image-slider img {
+    width: 100px; 
+    height: auto;   
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.image-slider img:hover {
+    opacity: 1;
+}
+
+.image-slider img.active {
+    opacity: 1;
+}
+
+
+.text-column {
+    width: 40%;
+    font-size: 1.1em;
+    color: #000;
+}
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: black;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+}
+
+.arrow:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
 }
